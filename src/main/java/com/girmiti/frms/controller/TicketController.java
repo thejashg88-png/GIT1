@@ -11,7 +11,7 @@ import com.girmiti.frms.service.TicketService;
 
 @RestController
 @RequestMapping("/tickets")
-@CrossOrigin(origins = "*")
+@CrossOrigin(origins = "http://localhost:5173")
 public class TicketController {
 
     @Autowired
@@ -26,4 +26,6 @@ public class TicketController {
     public List<TicketResponse> getAllTickets() {
         return service.getAllTickets();
     }
+    
+    
 }

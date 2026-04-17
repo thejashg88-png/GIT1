@@ -3,7 +3,11 @@ package com.girmiti.frms.model;
 import jakarta.persistence.*;
 
 @Entity
-@Table(name = "ticket")
+@Table(name = "ticket",
+uniqueConstraints = {
+        @UniqueConstraint(columnNames = "customerId")
+    }
+)
 public class Ticket {
 
     @Id

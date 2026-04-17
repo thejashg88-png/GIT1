@@ -14,7 +14,7 @@ public class TicketResponse {
         this.status = status;
     }
 
-    // Getters
+   
     public Long getTicketId() {
         return ticketId;
     }
